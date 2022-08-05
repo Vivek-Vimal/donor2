@@ -49,14 +49,13 @@ const Img = styled(motion.div)`
       }
 `;
 
-
 const T = styled.p`
     color: #000;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
-    text-align: center;
-    width: 20rem;
+    text-align: left;
+    width: 100%;
     
     @media only screen and (max-width: 768px) {
         font-weight: 510;
@@ -64,6 +63,20 @@ const T = styled.p`
         
       }
 `;
+
+const Ht = styled.h1`
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    
+    @media only screen and (max-width: 768px) {
+        font-weight: 510;
+        font-size: 1rem;
+        
+      }
+`; 
 
 const Left = styled.div`
         width: 35%;
@@ -73,7 +86,7 @@ const Left = styled.div`
         align-items: center;
         background-color: #FFF;
         border-radius: 1rem;
-
+      padding: 1rem;
         //   @media only screen and (max-width: 1100px) {
         //     width: 50%;
         // }
@@ -179,8 +192,11 @@ const Register5 = () => {
                 <Box>
                     <Left>
                         {/* <img src={logo} alt='' style={{width:'10rem',height:'9rem'}} /> */}
-                        <T>
+                        <Ht>
                             Capture your selfie
+                        </Ht>
+                        <T>
+                        Please take a selfie using your device
                         </T>
                     </Left>
                     

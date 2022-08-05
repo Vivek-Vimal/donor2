@@ -17,16 +17,18 @@ const RegisterationHome = () => {
 
   let PathName = useSelector( (state) => state.path)
 
+  console.log(PathName)
+
   return (
   
     <>
-      <Register1 />
       {
-        PathName === 'Registration3' ? 
-          <Register3 /> : PathName === 'Registration4' ? <Register4 /> :
+          PathName === 'Registration2' ? <Register2 /> :
+          PathName === 'Registration3' ? <Register3 /> :
+          PathName === 'Registration4' ? <Register4 /> :
           PathName === 'Registration5' ? <Register5 /> :
           PathName === 'Registration6' ? <Register6 /> :
-          PathName === 'Registration7' ? <Register9 /> : <Register2 />
+          PathName === 'Registration7' ? <Register9 /> : <Register1 />
       } 
     </>
   )

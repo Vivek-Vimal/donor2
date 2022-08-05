@@ -17,8 +17,6 @@ import { useSelector } from 'react-redux'
 
 const App = () => {
 
-  console.log(useSelector( (state) => state.path ) )
-
   return (
     <>
       <Navbar />

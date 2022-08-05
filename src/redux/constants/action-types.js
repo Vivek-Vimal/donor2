@@ -1,5 +1,5 @@
 
-
+export const PATHNAME1 = "PATHNAME1";
 export const PATHNAME2 = "PATHNAME2";
 export const PATHNAME3 = "PATHNAME3";
 export const PATHNAME4 = "PATHNAME4";

@@ -1,6 +1,8 @@
-import { PATHNAME2, PATHNAME3, PATHNAME4, PATHNAME5, PATHNAME6, PATHNAME7} from "../constants/action-types";
+import { PATHNAME1, PATHNAME2, PATHNAME3, PATHNAME4, PATHNAME5, PATHNAME6, PATHNAME7, PATHNAME8} from "../constants/action-types";
 
-
+export const SETPATH1 = () => ({
+  type: PATHNAME1,
+})
 export const SETPATH2 = () => ({
   type: PATHNAME2,
 })
@@ -19,6 +21,6 @@ export const SETPATH6 = () => ({
 export const SETPATH7 = () => ({
   type: PATHNAME7,
 })
-// export const SETPATH8 = () => ({
-//   type: PATHNAME8,
-// })
+export const SETPATH8 = () => ({
+  type: PATHNAME8,
+})

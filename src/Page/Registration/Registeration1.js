@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Tilt from 'react-parallax-tilt';
 //import bg from './bg.jpg'
 import theme from "styled-theming";
-
+import { useDispatch } from 'react-redux';
 import { FaAngleDown } from 'react-icons/fa';
 
 export const backgroundColor = theme("theme", {
@@ -192,6 +192,8 @@ const Margin = styled.div`
 
 const Register1 = () => {
   
+  const dispatch = useDispatch ();
+
     return (
         <Sec id="">
           <Width>
@@ -228,7 +230,9 @@ const Register1 = () => {
                   <input type="email" placeholder="Enter Number"  className="input" style={{height:"2rem",width:"10rem"}} />
                 </div>
               </Margin>
-              <Button>
+              <Button
+                onClick={() => {dispatch({type:'PATHNAME1'})}}
+              >
                 REGISTER FREE
               </Button>
             </Registration>

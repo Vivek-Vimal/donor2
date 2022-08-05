@@ -53,9 +53,6 @@ const T = styled.p`
     color: #000;
     font-weight: 500;
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    width: 20rem;
     
     @media only screen and (max-width: 768px) {
         font-weight: 510;
@@ -72,6 +69,7 @@ const Left = styled.div`
         align-items: center;
         background-color: #FFF;
         border-radius: 1rem;
+        padding: 1rem;
 
         //   @media only screen and (max-width: 1100px) {
         //     width: 50%;
