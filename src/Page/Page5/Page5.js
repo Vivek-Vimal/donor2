@@ -8,6 +8,7 @@ import theme from "styled-theming";
 import BigCard from './components/BigCard'
 import SmallCard from './components/SmallCard';
 import { FaAngleDown } from 'react-icons/fa';
+import SmallCard2 from './components/SmallCard2';
 
 export const backgroundColor = theme("theme", {
     light: "#000000",
@@ -229,6 +230,7 @@ const Page5 = () => {
             <Flex>
               <BigCard />
               <SmallCard />
+              {/* <SmallCard2 /> */}
             </Flex>
           </Width>
         </Sec>

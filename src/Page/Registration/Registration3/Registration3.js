@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
 //import './Css.css'
-import { Button } from '../../components/Navbar/Navbar';
+import { Button } from '../../../components/Navbar/Navbar';
 //import logo from './logo.png'
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -153,7 +154,10 @@ const H = styled.p`
 `;
 
 
-const Page6aa = () => {
+const Register3 = () => {
+
+    const dispatch = useDispatch();
+
     return (
         <Sec>
             <Width>
@@ -249,7 +253,9 @@ const Page6aa = () => {
 
 
                                 <div style={{display:'grid',placeItems:'center'}}>
-                            <Button style={{borderRadius:'2rem',width:'9rem',margin:'0.5rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
+                            <Button style={{borderRadius:'2rem',width:'9rem',margin:'0.5rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
+                                onClick={() => dispatch({type:'PATHNAME3'}) }
+                            >
                                 Next
                             </Button>
                             </div>
@@ -262,4 +268,4 @@ const Page6aa = () => {
     )
 }
 
-export default Page6aa
+export default Register3

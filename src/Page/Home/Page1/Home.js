@@ -118,15 +118,16 @@ const Right = styled(motion.div)`
 `;
 
 const Ht = styled.h1`
-    color: #FFF;
-    font-size: 4.5rem;
+    color: #000;
+    font-size: 4rem;
     margin-bottom: 2rem;
     text-align: left;
     //font-family: 'PT Serif', serif !important;
     line-height: 1.15;
+    margin: 0 0 0 2rem;
 
     @media only screen and (max-width: 1300px) {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     @media only screen and (max-width: 1300px) {
@@ -207,7 +208,7 @@ const ButtonR = styled(Button)`
 
 const Home = () => {
 
-    const darkThemeEnabled = useSelector((state) => state.preferences.darkThemeEnabled);
+    
     const dispatch = useDispatch();
     const wallet = useWallet();
 
@@ -261,7 +262,7 @@ const Home = () => {
           {/* <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',backgroundColor:'#98C87D'}}> */}
           <Width>
               <Left>
-                <Ht>Campaigns <div style={{color:'rgba(2, 169, 92, 1)'}}>To Your Heart</div> </Ht>
+                <Ht>Your support is highly  <span style={{color:'rgba(2, 169, 92, 1)'}}>appreciated</span> </Ht>
                 
                
               </Left>

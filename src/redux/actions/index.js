@@ -1,6 +1,24 @@
+import { PATHNAME2, PATHNAME3, PATHNAME4, PATHNAME5, PATHNAME6, PATHNAME7} from "../constants/action-types";
 
-export const TOGGLE_DARKTHEME = "TOGGLE_DARKTHEME";
 
-export const toggleDarkTheme = () => ({
-  type: TOGGLE_DARKTHEME,
-});
+export const SETPATH2 = () => ({
+  type: PATHNAME2,
+})
+export const SETPATH3 = () => ({
+  type: PATHNAME3,
+})
+export const SETPATH4 = () => ({
+  type: PATHNAME4,
+})
+export const SETPATH5 = () => ({
+  type: PATHNAME5,
+})
+export const SETPATH6 = () => ({
+  type: PATHNAME6,
+})
+export const SETPATH7 = () => ({
+  type: PATHNAME7,
+})
+// export const SETPATH8 = () => ({
+//   type: PATHNAME8,
+// })

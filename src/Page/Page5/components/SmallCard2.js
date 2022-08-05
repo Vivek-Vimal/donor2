@@ -63,10 +63,11 @@ export const backgroundColor = theme("theme", {
  const initialSelectedIndex = options.findIndex(({value}) => value === "bar");
  
 
-const SmallCard = (props) => {
+const SmallCard2 = (props) => {
     const Box= styled.div`
         
-        width: 30rem;   
+        width: 30rem;
+        height: 40rem;   
        background-color: #2D7B43;
         display: flex;
         flex-direction: column;
@@ -95,7 +96,6 @@ const SmallCard = (props) => {
     const Lower = styled.div`
        
         padding: 0 1rem;
-        height: 50%;
     `;
 
     const StyledLine = styled.div`
@@ -138,53 +138,56 @@ const ButtonR = styled(Button)`
     margin: 1rem 0 0 0;
   }
 `
+const LineWidth = styled.div`
+  width: 80%;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
+`
+
+const Ww = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
 
     return (
         <Box>
-            {/* <Ts style={{textAlign:"left",
-                   margin:"2rem 1rem 1rem 1rem", color:'rgba(2, 169, 92, 1)'
-                }}>{`${props.name ? props.name : "Save The Children Fund Save The Children"}`}</Ts> */}
-            {/* <Upper>
-                <img src={`${props.img ? props.img : "https://archive.org/download/03-05-2016_Images_Images_1-30/01_PT_hero_42_153645159.jpg"}`} alt="" style={{width:"100%",height:"100%",borderRadius:'0.75rem'}} />
-            </Upper> */}
-            <Button style={{width:'12rem',background:'#FFF',color:'#2D7B43'}}>
-                Donate
-            </Button>
-            <Button style={{width:'12rem',background:'#FFF',color:'#2D7B43',margin:'1rem 0 0 0'}}>
-                Share Now
-            </Button>
+            <svg width="126" height="126" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M63 0C28.2094 0 0 28.2094 0 63C0 97.7906 28.2094 126 63 126C97.7906 126 126 97.7906 126 63C126 28.2094 97.7906 0 63 0ZM90.2109 42.4266L60.5953 83.4891C60.1814 84.0668 59.6357 84.5376 59.0035 84.8623C58.3713 85.1871 57.6709 85.3565 56.9602 85.3565C56.2494 85.3565 55.549 85.1871 54.9168 84.8623C54.2846 84.5376 53.7389 84.0668 53.325 83.4891L35.7891 59.1891C35.2547 58.4437 35.7891 57.4031 36.7031 57.4031H43.2984C44.7328 57.4031 46.0969 58.0922 46.9406 59.2734L56.9531 73.1672L79.0594 42.5109C79.9031 41.3438 81.2531 40.6406 82.7016 40.6406H89.2969C90.2109 40.6406 90.7453 41.6813 90.2109 42.4266Z" fill="#60FF70"/>
+            </svg>
 
-            <H style={{margin:'4rem 0 1rem 0'}}>$ 4,80,00,362</H>
+            <LineWidth>
+                <Ww>
+                    <H>70%</H>
+                    <H>30%</H>
+                </Ww>
+                <Line percent={70} strokeWidth={4} strokeColor="#34F072" />
+            </LineWidth>
+
 
             <Container>
-                <T style={{margin:'0',textAlign:'center'}}>raised of ₹ 59,00,000 goal</T>
-                <Line />
                 <Flex>
-                    <div>
-                        <T style={{margin:'0'}}>Started On</T>
-                        <T style={{fontSize:'0.85rem'}}>29 jun 7:00pm</T>
-                    </div>
-                    <div>
-                        <T style={{textAlign:'right',margin:'0'}}>Ends on</T>
-                        <T style={{textAlign:'right',fontSize:'0.85rem'}}>29 jun 10:00pm</T>
-                    </div>
+                    
+                    <Button style={{borderRadius:'1.5rem',width:'9rem',margin:'0.5rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
+                        Yes    
+                    </Button>
+
+                    <Button style={{borderRadius:'1.5rem',width:'9rem',margin:'0.5rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem',background:'#FF6161'}}>
+                        No
+                    </Button>
+                  
                 </Flex>
             </Container>
 
-            {/* <SwitchSelector
-                onChange={onChange}
-                options={options}
-                initialSelectedIndex={initialSelectedIndex}
-                backgroundColor={"#e5e5e5"}
-                fontColor={"#02A95C"}
-                style={{height:'0.2rem'}}
-            /> */}
             <Lower>
-              
+              <T style={{fontSize:'1rem'}}>Created:	Feb 13, 2020 20:43 IST (+05:30)</T>
+              <T style={{fontSize:'1rem'}}>Executed:	Feb 14, 2020 20:24 IST (+05:30)</T>
  
             </Lower>
         </Box>
     )
 }
 
-export default SmallCard
+export default SmallCard2

@@ -190,7 +190,7 @@ const Margin = styled.div`
 ` 
 
 
-const Register = () => {
+const Register1 = () => {
   
     return (
         <Sec id="">
@@ -241,4 +241,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Register1

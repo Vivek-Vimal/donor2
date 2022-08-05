@@ -155,7 +155,6 @@ const RightContainer = styled.div`
 
 const Navbar = () => {
 
-  const darkThemeEnabled = useSelector((state) => state.preferences.darkThemeEnabled);
 
   const wallet = useWallet();
 
@@ -190,10 +189,10 @@ const changeBackground = () => {
         
             <PC>
               <ul className={wallet.account ? "listWallet" : "list"}>
-                  <Hr href="http://donor-vaults.s3-website-us-west-2.amazonaws.com/#/avax" spy={true} smooth={true} offset={-80}>Campaigns</Hr>
+                  <Link2 to="/campaigns" spy={true} smooth={true} offset={-80}>Campaigns</Link2>
                   {/* <Link2 to="/earn" spy={true} smooth={true} offset={-80}>Earn</Link2>
                   <Link2 to="/donate" spy={true} smooth={true} offset={-80}>Donate</Link2> */ }
-                  <Link2 to="/donate" spy={true} smooth={true} offset={-80}>Start a Fundraise</Link2>  
+                  <Link2 to="/register" spy={true} smooth={true} offset={-80}>Start a Fundraise</Link2>  
                   <Link2 to="/docs" spy={true} smooth={true} offset={-80}>Docs</Link2>
                   <Link2 to="/work" spy={true} smooth={true} offset={-80}>How It Works</Link2> 
                   {

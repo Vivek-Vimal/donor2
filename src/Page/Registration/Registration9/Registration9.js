@@ -3,7 +3,7 @@ import './Content.css'
 import styled from 'styled-components'
 import { FaAngleDown } from 'react-icons/fa';
 import img from './correct.png'
-import { Button } from '../../components/Navbar/Navbar';
+import { Button } from '../../../components/Navbar/Navbar';
 
 const Sec = styled.section`
     display: flex;
@@ -29,7 +29,7 @@ const Sec = styled.section`
 `
 const H = styled.h1`
   color: #FFF;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   margin: 1.5rem 0 0 0;
 
@@ -100,7 +100,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 `
 
 
-const Page6b = () => {
+const Register9 = () => {
 
     return (
         <Sec id="roadmap">
@@ -108,11 +108,10 @@ const Page6b = () => {
             <Details>
                 <img src={img} alt='' style={{height:'5rem',width:'5rem'}} />
                 <H>Registration completed successfully</H>
-                <Button style={{borderRadius:'0.5rem',width:'6rem',margin:'2rem 0 0.5rem 0'}}>
-                     OK
+                <H>Email successfully verified. You can now start fundraiser on DONOR platform.</H>
+                <Button style={{borderRadius:'0.5rem',width:'12rem',margin:'2rem 0 0.5rem 0'}}>
+                    Fundraise now
                 </Button>
-
-                <T>You can now start a fundraiser on DONOR platform</T>
             </Details>
             
           </Width>
@@ -120,4 +119,4 @@ const Page6b = () => {
     )
 }
 
-export default Page6b
+export default Register9

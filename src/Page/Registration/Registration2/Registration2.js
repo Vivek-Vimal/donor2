@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
 import './Css.css'
-import { Button } from '../../components/Navbar/Navbar';
-import logo from './logo.png'
+import { Button } from '../../../components/Navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
+import Register3 from '../Registration3/Registration3';
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -36,17 +38,6 @@ const Width = styled.div`
         flex-direction: column;
     }
 `
-
-const Img = styled(motion.div)`
-        width: 30rem;
-        border-radius: 1rem;
-    @media only screen and (max-width: 768px) {
-        margin-right: 0;
-        width: 100%;
-        padding: 0 1rem;
-      }
-`;
-
 
 const T = styled.p`
     color: #000;
@@ -124,7 +115,6 @@ const Box = styled.div`
 const Back = styled.div`
     margin: 3rem 0;
 `
-
 const Details = styled.div`
 background: linear-gradient(180deg, rgba(2, 169, 92, 0.5) 0%, rgba(34, 170, 48, 0.5) 100%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -152,9 +142,19 @@ const H = styled.p`
   }
 `;
 
+const Register2 = () => {
 
-const Page6a = () => {
+//     const navigate = useNavigate ();
+
+// const naviagtePath = ()=>{
+//     let path = `/`;
+//     navigate(path);
+// }
+
+const dispatch = useDispatch();
+
     return (
+        
         <Sec>
             <Width>
                 <Box>
@@ -358,10 +358,12 @@ const Page6a = () => {
                             </div>
 
 
-                                <div style={{display:'grid',placeItems:'center'}}>
-                            <Button style={{borderRadius:'2rem',width:'9rem',margin:'0.5rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
-                                Next
-                            </Button>
+                            <div style={{display:'grid',placeItems:'center'}}>
+                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'0.5rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
+                                    onClick={() => dispatch({type:'PATHNAME2'}) }
+                                >
+                                    Next
+                                </Button>
                             </div>
 
                         </Details>
@@ -372,4 +374,4 @@ const Page6a = () => {
     )
 }
 
-export default Page6a
+export default Register2
