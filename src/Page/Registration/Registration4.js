@@ -140,6 +140,7 @@ const Box = styled.div`
 
 const Back = styled.div`
     margin: 3rem 0;
+    cursor: pointer;
 `
 
 const Details = styled.div`
@@ -206,7 +207,9 @@ const Register4 = () => {
                     </Left>
                     
                     <Right>
-                        <Back style={{display:'flex',width:'100%',alignItems:'flex-end',justifyContent:'flex-end'}}>
+                        <Back style={{display:'flex',width:'100%',alignItems:'flex-end',justifyContent:'flex-end'}}
+                            onClick = {()=> dispatch({type:'BACK4'})}
+                        >
                             <div style={{width:'8rem',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
                                 <div>
                                     <svg width="32" height="30" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">

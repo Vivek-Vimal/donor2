@@ -1,4 +1,7 @@
-import { PATHNAME1, PATHNAME2, PATHNAME3, PATHNAME4, PATHNAME5, PATHNAME6, PATHNAME7, PATHNAME8} from "../constants/action-types";
+import { PATHNAME1, PATHNAME2, PATHNAME3, PATHNAME4, 
+  PATHNAME5, PATHNAME6, PATHNAME7, PATHNAME8,
+  BACK2, BACK3, BACK4, BACK5, BACK6, BACK7
+} from "../constants/action-types";
 
 export const SETPATH1 = () => ({
   type: PATHNAME1,
@@ -23,4 +26,25 @@ export const SETPATH7 = () => ({
 })
 export const SETPATH8 = () => ({
   type: PATHNAME8,
+})
+
+
+
+export const SETBACK2 = () => ({
+  type: BACK2,
+})
+export const SETBACK3 = () => ({
+  type: BACK3,
+})
+export const SETBACK4 = () => ({
+  type: BACK4,
+})
+export const SETBACK5 = () => ({
+  type: BACK5,
+})
+export const SETBACK6 = () => ({
+  type: BACK6,
+})
+export const SETBACK7 = () => ({
+  type: BACK7,
 })

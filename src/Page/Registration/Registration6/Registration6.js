@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '../../../components/Navbar/Navbar';
 //import logo from './logo.png'
 import lappy from './lappy.png'
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -126,6 +127,7 @@ const Box = styled.div`
 
 const Back = styled.div`
     margin: 3rem 0;
+    cursor: pointer;
 `
 
 const Details = styled.div`
@@ -175,12 +177,17 @@ const Frame = styled.div`
     `
 
 const Register6 = () => {
+
+    const dispatch = useDispatch ();
+
     return (
         <Sec>
             <Width>
                 <Box>
                     
-                        <Back style={{display:'flex',width:'90%',justifyContent:'flex-end'}}>
+                        <Back style={{display:'flex',width:'90%',justifyContent:'flex-end'}}
+                            onClick = {()=> dispatch({type:'BACK6'})}
+                        >
                             <div style={{width:'8rem',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
                                 <div>
                                     <svg width="32" height="30" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
