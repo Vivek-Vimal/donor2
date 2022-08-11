@@ -6,11 +6,6 @@ import Register4 from './Registration4'
 import Register5 from './Registration5/Registration5'
 import Register6 from './Registration6/Registration6'
 import Register9 from './Registration9/Registration9'
-import Fourm from './Fourm'
-import FourmPage1 from './FourmPage1'
-import FourmPage2 from './FourmPage2'
-import FourmPage3 from './FourmPage3'
-import FourmPage4 from './FourmPage4'
 import { useSelector } from 'react-redux'
 
 const RegisterationHome = () => {

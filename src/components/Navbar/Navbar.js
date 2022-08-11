@@ -192,7 +192,7 @@ const changeBackground = () => {
                   <Link2 to="/campaigns" spy={true} smooth={true} offset={-80}>Campaigns</Link2>
                   {/* <Link2 to="/earn" spy={true} smooth={true} offset={-80}>Earn</Link2>
                   <Link2 to="/donate" spy={true} smooth={true} offset={-80}>Donate</Link2> */ }
-                  <Link2 to="/register" spy={true} smooth={true} offset={-80}>Start a Fundraise</Link2>  
+                  <Link2 to="/fundraise" spy={true} smooth={true} offset={-80}>Start a Fundraise</Link2>  
                   <Link2 to="/docs" spy={true} smooth={true} offset={-80}>Docs</Link2>
                   <Link2 to="/work" spy={true} smooth={true} offset={-80}>How It Works</Link2> 
                   {

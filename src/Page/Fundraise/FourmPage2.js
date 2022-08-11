@@ -12,7 +12,7 @@ const Sec = styled.section`
     min-height: 100vh;
     width: 100%;
     display: flex;
-    padding: 4rem 0;
+    padding: 8rem 0 2rem 0;
     // flex-direction: column;
       // align-items: center;
        justify-content: center;
@@ -42,7 +42,7 @@ const Width = styled.div`
 `
 
 const H = styled.h1`
-    color: #000;
+    color: #FFF;
     font-size: 2rem;
     font-weight: light;
     margin-bottom: 2rem;
@@ -56,7 +56,7 @@ const H = styled.h1`
 
 
 const T = styled.p`
-    color: #000;
+    color: #FFF;
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -134,12 +134,8 @@ const Grid = styled.div`
     display: grid;
     width: 100%;
     margin: 3rem 0 0 0;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-      grid-gap: 1rem;
-
- 
-
- 
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+     grid-gap: 2rem 0.5rem;
    
 `
 const Back = styled.div`
@@ -151,6 +147,7 @@ const Details = styled.div`
 background: linear-gradient(180deg, rgba(2, 169, 92, 0.5) 0%, rgba(34, 170, 48, 0.5) 100%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
 
+
     padding: 3rem 2rem 2rem 2rem;
     border: 0.25rem solid #FFFFFF;
     border-radius: 1.25rem;
@@ -158,7 +155,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 
 `
 
-const Fourm = () => {
+const FourmPage2 = () => {
     return (
         <Sec>
             <Width>
@@ -166,11 +163,11 @@ const Fourm = () => {
                     <Left>
                         <img src={logo} alt='' style={{width:'5rem',height:'5rem'}} />
                         <Margin>
-                            
-                            <H >
-                                BEGIN YOUR FUNDRAISING
+                            {/* <T>2 of 4</T> */}
+                            <H style={{color:'#000'}}  >
+                                Fund amount you would like to raise
                             </H>
-                            <T>We'll help you complete it successfully</T>
+                            <T style={{color:'#000'}} >If you need more funds you can anytime start a new fundraiser.</T>
                         </Margin>
                     </Left>
                     
@@ -187,35 +184,17 @@ const Fourm = () => {
                         </Back>
                           <Details>
 
-                            <T style={{margin:'0 0 0.5rem 0',fontSize:'1.6rem',color:'rgba(0,0,0,0.9)'}}>
-                            Please choose your location.</T>
-                            <T style={{color:'rgba(0,0,0,0.7)'}}>We use you location to determine your currency</T>
-                            <div>
-                                <div class="dropdown1">
-                                <button class="dropbtn1">Country<FaAngleDown style={{fontSize:'1.8rem',color:'grey'}} /> </button>
-                                <div class="dropdown-content1">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                </div>
-                                </div>
-                            </div> 
-                            <div style={{margin:'3rem 0 0 0'}}>
-                                <T style={{margin:'0 0 0.5rem 0',fontSize:'1.6rem',color:'rgba(0,0,0,0.9)'}}>
-                                Choose a category that best describes your fundraise category.</T>
-                                <Grid>
-                                    <Tag Text='Animals' />
-                                    <Tag Text='Business' />
-                                    <Tag Text='Community' />
-                                    <Tag Text='Education' />
-                                    <Tag Text='Faith' />
-                                    <Tag Text='Family' />
-                                    <Tag Text='Medical' />
-                                    <Tag Text='Other' />
-                                    <Tag Text='Relief Works' />
-                                    <Tag Text='Sports' />
-                                    <Tag Text='Travel' />
-                                </Grid>
+                          <T style={{margin:'0 0 0 0',fontSize:'1.6rem'}}>
+                            Your goal amount</T>
+   
+                       
+                                <input type="Number" placeholder="Your goal amount"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.75rem',width:'100%',margin:'2rem 0 0 0'}} />
+                                
+                         
+                           
+                            <div style={{margin:'2rem 0 0 0',color:'#FFF'}}>
+                               
+                                Please note that amounts are shown in terms of US Dollars but the donation would be in cryptocurrency that is remitted after deducting the platform fees.
                             </div>
 
                             <div style={{display:'grid',placeItems:'center'}}>
@@ -223,6 +202,7 @@ const Fourm = () => {
                                     Next
                                 </Button>
                             </div>
+                            
                         </Details>
                        
                        
@@ -234,4 +214,5 @@ const Fourm = () => {
     )
 }
 
-export default Fourm
+export default FourmPage2
+
