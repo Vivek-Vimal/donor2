@@ -1,19 +1,15 @@
 import React,{useState, useEffect, useRef } from 'react'
 import './Navbar.css';
 import logo from './logo.svg';
-import mlogo from './logo.svg';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 import { Link, animateScroll as scroll } from "react-scroll";
 import theme from "styled-theming";
-import { useSelector, useDispatch } from "react-redux";
-import dis from './Discord.png';
-import med from './Medium.png'
-import twi from './Twitter.png';
 import { Link as RouterLink } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
+import Profile from './components/Profile/Profile';
 
 export const backgroundColor = theme("theme", {
   light: "#000000",
@@ -189,7 +185,7 @@ const changeBackground = () => {
         
             <PC>
               <ul className={wallet.account ? "listWallet" : "list"}>
-                  <Link2 to="/campaigns" spy={true} smooth={true} offset={-80}>Campaigns</Link2>
+                  <Link2 to="/fundraiser" spy={true} smooth={true} offset={-80}>Fundraiser</Link2>
                   {/* <Link2 to="/earn" spy={true} smooth={true} offset={-80}>Earn</Link2>
                   <Link2 to="/donate" spy={true} smooth={true} offset={-80}>Donate</Link2> */ }
                   <Link2 to="/fundraise" spy={true} smooth={true} offset={-80}>Start a Fundraise</Link2>  
@@ -226,6 +222,8 @@ const changeBackground = () => {
           </div>
 
         </RightContainer>
+
+        <Profile/>
 
         </nav>   
     )

@@ -1,14 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components'
 import './Style.css'
-// import img from '../../components/Navbar/logo.png'
-import Tilt from 'react-parallax-tilt';
-import bg from './bg.jpg'
+import bg from './pic.png'
 import theme from "styled-theming";
 import BigCard from './components/BigCard'
 import SmallCard from './components/SmallCard';
-import { FaAngleDown } from 'react-icons/fa';
-import SmallCard2 from './components/SmallCard2';
+import VaultCard from './components/VaultCard';
 
 export const backgroundColor = theme("theme", {
     light: "#000000",
@@ -37,33 +34,6 @@ const Sec = styled.section`
       }
 `;
 
-const Registration = styled.div`
-  width: 1300px;
-
-  display: flex;
-  border-radius: 0.75rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-
-  @media only screen and (max-width: 1300px) {
-    width: 98%;
-    
-  }
-  @media only screen and (max-width: 1100px) {
-    
-    display: grid;
-    
-      grid-template-columns: repeat(2, minmax(50%, 1fr));
-      place-items: center;
-    
-  }
-  @media only screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
 
 const T = styled.p`
     color: #000;
@@ -109,16 +79,6 @@ const Flex = styled.div`
       }
 `;
 
-// const Line = styled.div`
-//      height: 3rem;
-//      width: 1px;
-//      background: rgba(0,0,0,0.3);
-//      margin: 0 2rem 0 0;
-//      display: block;
-//       @media only screen and (max-width: 1100px) {
-//         display: none;
-//       }
-// `;
 
 const Button = styled.button`
   background-color: rgba(2, 169, 92, 1);
@@ -154,21 +114,9 @@ const SmallButton = styled.button`
   color: rgba(2, 169, 92, 1);
   font-size: 1.2rem;
   cursor: pointer;
-      margin: 0 0 0 1rem;
+      margin: 1.5rem 0 0 0;
 `
 
-const Container = styled.div`
-    display: flex;
-    align-items: center;
-    width: 100%;
-    //align-items: ;
-    justify-content: flex-end;
-    margin: 0 0 3rem 0;
-
-    @media only screen and (max-width: 768px) {
-      margin: 2rem 0 3rem 0;
-    }
-`
 const Width = styled.div`
       width: 1300px;
       display: flex;
@@ -218,6 +166,8 @@ const Line = styled.div`
 
 const Page5 = () => {
   
+  const [ dis, setDis ] = useState('none');
+
     return (
         <Sec id="">
           <Width>
@@ -227,11 +177,16 @@ const Page5 = () => {
               </Heading>
               <Line />
             </div>
+            <SmallButton
+              onClick={() => { dis === 'none' ? setDis('flex') : setDis('none')}}
+            >Vaults</SmallButton>
+            <VaultCard dis={dis} />
             <Flex>
-              <BigCard />
+              <BigCard img={bg} />
               <SmallCard />
               {/* <SmallCard2 /> */}
             </Flex>
+            
           </Width>
         </Sec>
     )
