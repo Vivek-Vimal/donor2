@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '../../components/Navbar/Navbar';
 import logo from '../../components/Navbar/logo.svg'
 import I from './components/img.svg';
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -168,6 +169,9 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 `
 
 const FourmPage3 = () => {
+
+    const dispatch = useDispatch ();
+
     return (
         <Sec>
             <Width>
@@ -205,7 +209,9 @@ const FourmPage3 = () => {
                                
 
                             <div style={{display:'grid',placeItems:'center'}}>
-                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
+                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
+                                     onClick={() => dispatch({type:'F5'}) }
+                                >
                                     Next
                                 </Button>
                             </div>

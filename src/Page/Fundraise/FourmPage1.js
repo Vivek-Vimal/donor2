@@ -10,6 +10,7 @@ import WideBox from './components/WideBox';
 import i1 from './components/you.svg'
 import i2 from './components/charity.svg'
 import i3 from './components/other.svg'
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -165,6 +166,9 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 `
 
 const FourmPage1 = () => {
+
+    const dispatch = useDispatch ();
+
     return (
         <Sec>
             <Width>
@@ -225,7 +229,9 @@ const FourmPage1 = () => {
                             </div>
 
                             <div style={{display:'grid',placeItems:'center'}}>
-                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
+                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
+                                    onClick={() => dispatch({type:'F3'}) }
+                                >
                                     Next
                                 </Button>
                             </div>

@@ -6,6 +6,7 @@ import { H, T } from '../../Home/Page2/Page2'
 import { Line, Circle } from 'rc-progress';
 import { Button } from '../../../components/Navbar/Navbar';
 import SwitchSelector from "react-switch-selector";
+import { Link } from 'react-router-dom'
 
 export const backgroundColor = theme("theme", {
     light: "#000000",
@@ -148,7 +149,9 @@ const ButtonR = styled(Button)`
                 <img src={`${props.img ? props.img : "https://archive.org/download/03-05-2016_Images_Images_1-30/01_PT_hero_42_153645159.jpg"}`} alt="" style={{width:"100%",height:"100%",borderRadius:'0.75rem'}} />
             </Upper> */}
             <Button style={{width:'12rem',background:'#FFF',color:'#2D7B43'}}>
-                Donate
+                <Link to="/payment" style={{textDecoration:'none',color:'#2D7B43'}}>
+                    Donate
+                </Link>
             </Button>
             <Button style={{width:'12rem',background:'#FFF',color:'#2D7B43',margin:'1rem 0 0 0'}}>
                 Share Now

@@ -4,6 +4,7 @@ import Tilt from 'react-parallax-tilt';
 import { H, T } from '../../../Home/Page2/Page2'
 import { FaAngleDown } from 'react-icons/fa';
 import './CurrencyCard.css'
+import { useDispatch } from 'react-redux';
 
 const CurrencyCard = (props) => {
     const Box= styled.div`
@@ -41,8 +42,12 @@ const CurrencyCard = (props) => {
         place-items: center;
     `;
 
+    const dispatch = useDispatch ();
+
     return (
-        <Box>
+        <Box
+        onClick={()=> dispatch({type:'PAY1'})}
+       >
             <Heading>
                 Contribute
             </Heading>

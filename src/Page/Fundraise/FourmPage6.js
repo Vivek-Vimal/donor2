@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { Button } from '../../components/Navbar/Navbar';
 import logo from '../../components/Navbar/logo.svg'
 import I from './components/tick.jpg';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom'
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -54,10 +56,10 @@ const Input = styled.input`
     
 `
 
-const H = styled.h1`
+const H = styled.p`
     color: #FFF;
-    font-size: 2rem;
-    font-weight: light;
+    font-size: 1.75rem;
+    font-weight: 600;
     margin: 2rem 0.5rem;
     text-align: center;
     @media only screen and (max-width: 768px) {
@@ -118,6 +120,9 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 `
 
 const FourmPage6 = () => {
+
+    const dispatch = useDispatch ();
+
     return (
         <Sec>
             <Width>
@@ -131,8 +136,10 @@ const FourmPage6 = () => {
                                </H>
 
                             <div style={{display:'grid',placeItems:'center'}}>
-                                <Button style={{borderRadius:'2rem',width:'12rem',margin:'0 0 2rem 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
-                                    Continue
+                                <Button style={{borderRadius:'2rem',width:'12rem',margin:'0 0 2rem 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
+                                    
+                                >
+                                   <Link to='/' style={{textDecoration:'none',color:'#fff'}}>Continue</Link> 
                                 </Button>
                             </div>
                         </Details>

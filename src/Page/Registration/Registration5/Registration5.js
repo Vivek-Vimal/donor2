@@ -6,6 +6,7 @@ import { Button } from '../../../components/Navbar/Navbar';
 //import logo from './logo.png'
 import man from './man.svg'
 import { useDispatch } from 'react-redux';
+import logo from '../../../components/Navbar/logo.svg'
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -192,7 +193,9 @@ const Register5 = () => {
             <Width>
                 <Box>
                     <Left>
-                        {/* <img src={logo} alt='' style={{width:'10rem',height:'9rem'}} /> */}
+                    <div style={{width:'100%'}}>
+                            <img src={logo} alt='' style={{width:'5rem',height:'4.5rem',margin:'0 0 2rem 0'}} />
+                        </div>
                         <Ht>
                             Capture your selfie
                         </Ht>
@@ -234,7 +237,7 @@ const Register5 = () => {
 
                             <div style={{display:'grid',placeItems:'center'}}>
                                 <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
-                                    onClick={() => dispatch({type:'PATHNAME5'}) }
+                                    onClick={() => dispatch({type:'PATHNAME6'}) }
                                 >
                                     Next
                                 </Button>

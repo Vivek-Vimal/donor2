@@ -28,9 +28,9 @@ export const backgroundColor = theme("theme", {
 
 const VaultCard = (props) => {
     const Box= styled.div`
-        display: ${props.dis ? props.dis : 'none'};
+        display: flex;
         width: 40rem; 
-        height: 100%;  
+       // height: 30rem;  
        background-color: #FFF;
         flex-direction: column;
         align-items: center;
@@ -71,7 +71,7 @@ const VaultCard = (props) => {
                    margin:"2rem 1rem 1rem 1rem", color:'rgba(2, 169, 92, 1)'
                 }}>{`${props.name ? props.name : "Save The Children Fund Save The Children"}`}</Ts> */}
             <Upper>
-                <img src={vault} alt="" style={{width:"100%",height:"100%",borderRadius:'0.75rem'}} />
+                <img src={vault} alt="" style={{width:"100%",height:"100%",borderRadius:'0.75rem 0.75rem 0 0'}} />
             </Upper>
           
             <Lower>

@@ -5,6 +5,8 @@ import { H, T } from '../../../Home/Page2/Page2'
 import './CurrencyCard.css'
 import { Button } from '../../../../components/Navbar/Navbar';
 import thank from './thank.svg'
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const ThankYouCard = (props) => {
     const Box= styled.div`
@@ -42,6 +44,8 @@ const ThankYouCard = (props) => {
         place-items: center;
     `;
 
+    const dispatch = useDispatch ();
+
     return (
         <Box>
             
@@ -58,7 +62,9 @@ const ThankYouCard = (props) => {
 
             <div style={{display:'grid',placeItems:'center'}}>
                 <Button style={{borderRadius:'2rem',minWidth:'9rem',margin:'1rem 0',border:'2px solid #F7F7F7',fontSize:'1.75rem'}}>
+                    <Link to ='/' style={{textDecoration:'none',color:'#fff'}}>
                     Return Home
+                    </Link> 
                 </Button>
             </div>
             

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '../../../components/Navbar/Navbar';
 //import logo from './logo.png'
 import { useDispatch } from 'react-redux';
+import logo from '../../../components/Navbar/logo.svg'
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -162,7 +163,9 @@ const Register3 = () => {
             <Width>
                 <Box>
                     <Left>
-                        {/* <img src={logo} alt='' style={{width:'10rem',height:'9rem'}} /> */}
+                    <div style={{width:'100%'}}>
+                            <img src={logo} alt='' style={{width:'5rem',height:'4.5rem',margin:'0 0 2rem 0'}} />
+                        </div>
                         <T>
                         Thousands of fundraisers met their goal amounts using DONOR platform 
                         </T>

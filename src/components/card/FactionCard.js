@@ -6,6 +6,8 @@ import { H, T } from '../../Page/Home/Page2/Page2'
 import { Line, Circle } from 'rc-progress';
 import { Button } from '../Navbar/Navbar';
 import wp from './wp.svg';
+import { useDispatch } from 'react-redux';
+import { Link  } from 'react-router-dom'
 
 export const backgroundColor = theme("theme", {
     light: "#000000",
@@ -91,8 +93,12 @@ const ButtonR = styled(Button)`
     margin: 1rem 0 0 0;
   }
 `
+
+const dispatch = useDispatch();
+
     return (
         <Box>
+            <Link to='/fund' style={{textDecoration:'none'}}>
             <Ts style={{textAlign:"left",
                    margin:"2rem 1rem 1rem 1rem", color:'rgba(2, 169, 92, 1)'
                 }}>{`${props.name ? props.name : "Save The Children Fund Save The Children"}`}</Ts>
@@ -121,12 +127,17 @@ const ButtonR = styled(Button)`
                 </T>
 
                 <ButtonContainer>
-                    <Button style={{borderRadius:'1.5rem',minWidth:'9rem'}}>Donate</Button>
+                     
+                    <Button style={{borderRadius:'1.5rem',minWidth:'9rem'}}
+                        
+                    ><Link to='/payment' style={{color:'#FFF',textDecoration:'none'}}>
+                        Donate</Link></Button>
                     <ButtonR style={{borderRadius:'1.5rem',minWidth:'9rem'}}>
                         <img src={wp} alt='' style={{height:'1.25rem',width:'1.25rem',margin:'0 0.2rem 0 0'}} />
                         Share</ButtonR>
                 </ButtonContainer>
             </Lower>
+            </Link>
         </Box>
     )
 }

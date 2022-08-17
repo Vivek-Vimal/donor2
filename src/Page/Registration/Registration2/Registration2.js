@@ -6,6 +6,7 @@ import { Button } from '../../../components/Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
 import Register3 from '../Registration3/Registration3';
 import { useDispatch } from 'react-redux';
+import logo from '../../../components/Navbar/logo.svg'
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -173,8 +174,9 @@ const dispatch = useDispatch();
             <Width>
                 <Box>
                     <Left>
-                        {/* <img src={logo} alt='' style={{width:'10rem',height:'9rem'}} /> */}
-                        
+                        <div style={{width:'100%'}}>
+                            <img src={logo} alt='' style={{width:'5rem',height:'4.5rem',margin:'0 0 2rem 0'}} />
+                        </div>
                         <Ht>
                         Your information is collected for legal and security purposes only
                         </Ht>

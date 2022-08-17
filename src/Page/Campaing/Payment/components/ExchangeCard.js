@@ -5,6 +5,7 @@ import { H, T } from '../../../Home/Page2/Page2'
 import { FaAngleDown } from 'react-icons/fa';
 import './CurrencyCard.css'
 import { Button } from '../../../../components/Navbar/Navbar';
+import { useDispatch } from 'react-redux';
 
 const ExchangeCard = (props) => {
     const Box= styled.div`
@@ -42,8 +43,12 @@ const ExchangeCard = (props) => {
         place-items: center;
     `;
 
+    const dispatch = useDispatch ();
+
     return (
-        <Box>
+        <Box
+            
+        >
             <Heading>
                 Contribute
             </Heading>
@@ -95,7 +100,9 @@ const ExchangeCard = (props) => {
             </div>
 
             <div style={{display:'grid',placeItems:'center'}}>
-                <Button style={{borderRadius:'2rem',minWidth:'9rem',margin:'1rem 0',border:'2px solid #F7F7F7',fontSize:'1.75rem'}}>
+                <Button style={{borderRadius:'2rem',minWidth:'9rem',margin:'1rem 0',border:'2px solid #F7F7F7',fontSize:'1.75rem'}}
+                    onClick={()=> dispatch({type:'PAY2'})}
+                >
                     DONATE
                 </Button>
             </div>

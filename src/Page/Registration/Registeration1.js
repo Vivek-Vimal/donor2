@@ -227,13 +227,24 @@ const Register1 = () => {
                 <Line />
                 <div>
                   <p style={{fontSize:'1.2rem',margin:'0 0 0.5rem 0'}}>Mobile Number</p>
-                  <input type="email" placeholder="Enter Number"  className="input" style={{height:"2rem",width:"10rem"}} />
+                  <div style={{display:'flex',alignItems:'center',height:'3rem',padding:'0 0 0 -2rem'}}>
+                    <div class="dropdown" style={{width:'2rem',margin:'0',padding:'0'}}>
+                      <FaAngleDown style={{fontSize:'1.8rem',color:'grey',margin:'0.5rem 0 0 0',padding:'0'}} /> 
+                      <div class="dropdown-content">
+                        <a href="#">+91 | IND</a>
+                        <a href="#">+22 | USA</a>
+                        <a href="#">+88 | AUS</a>
+                      </div>
+                    </div>
+                  
+                    <input type="email" placeholder="Enter Number"  className="input" style={{height:"2rem",width:"10rem",margin:'0',padding:'0'}} />
+                  </div>
                 </div>
               </Margin>
               <Button
                 onClick={() => {dispatch({type:'PATHNAME1'})}}
               >
-                REGISTER FREE
+                REGISTER
               </Button>
             </Registration>
             </Gradient>

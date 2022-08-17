@@ -3,6 +3,8 @@ import CurrencyCard from './components/CurrencyCard'
 import styled from 'styled-components';
 import ExchangeCard from './components/ExchangeCard';
 import ThankYouCard from './components/ThankYouCard';
+import { useSelector } from 'react-redux'
+
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -28,13 +30,17 @@ const Sec = styled.section`
 
 const Payment = () => {
 
+
+  let PathName = useSelector( (state) => state.path)
+
   return (
     <Sec>
+      {
+        PathName === "pay1" ? <ExchangeCard /> :
+        PathName === "pay2" ? <ThankYouCard />:
         <CurrencyCard />
-          <div style={{height:'3rem'}} />
-        <ExchangeCard />
-          <div style={{height:'3rem'}} />
-        <ThankYouCard />
+      }
+        
     </Sec>
   )
 }

@@ -186,8 +186,8 @@ const changeBackground = () => {
             <PC>
               <ul className={wallet.account ? "listWallet" : "list"}>
                   <Link2 to="/fundraiser" spy={true} smooth={true} offset={-80}>Fundraiser</Link2>
-                  {/* <Link2 to="/earn" spy={true} smooth={true} offset={-80}>Earn</Link2>
-                  <Link2 to="/donate" spy={true} smooth={true} offset={-80}>Donate</Link2> */ }
+                  <Link2 to="/vault" spy={true} smooth={true} offset={-80}>Vault</Link2>
+                  {/* <Link2 to="/donate" spy={true} smooth={true} offset={-80}>Donate</Link2>  */}
                   <Link2 to="/fundraise" spy={true} smooth={true} offset={-80}>Start a Fundraise</Link2>  
                   <Link2 to="/docs" spy={true} smooth={true} offset={-80}>Docs</Link2>
                   <Link2 to="/work" spy={true} smooth={true} offset={-80}>How It Works</Link2> 

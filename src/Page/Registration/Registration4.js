@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion'
 //import './Css.css'
 import { Button } from '../../components/Navbar/Navbar';
-//import logo from './logo.png'
+import logo from '../../components/Navbar/logo.svg'
 import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
@@ -197,7 +197,9 @@ const Register4 = () => {
             <Width>
                 <Box>
                     <Left>
-                        {/* <img src={logo} alt='' style={{width:'10rem',height:'9rem'}} /> */}
+                    <div style={{width:'100%'}}>
+                            <img src={logo} alt='' style={{width:'5rem',height:'4.5rem',margin:'0 0 2rem 0'}} />
+                        </div>
                         <Ht>
                         We need your identity proof
                         </Ht>

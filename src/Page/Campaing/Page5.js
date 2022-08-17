@@ -177,10 +177,10 @@ const Page5 = () => {
               </Heading>
               <Line />
             </div>
-            <SmallButton
+            {/* <SmallButton
               onClick={() => { dis === 'none' ? setDis('flex') : setDis('none')}}
             >Vaults</SmallButton>
-            <VaultCard dis={dis} />
+            <VaultCard dis={dis} /> */}
             <Flex>
               <BigCard img={bg} />
               <SmallCard />

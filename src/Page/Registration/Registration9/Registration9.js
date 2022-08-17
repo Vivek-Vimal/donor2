@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { FaAngleDown } from 'react-icons/fa';
 import img from './correct.png'
 import { Button } from '../../../components/Navbar/Navbar';
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     display: flex;
@@ -102,6 +103,8 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 
 const Register9 = () => {
 
+    const dispatch = useDispatch ();
+
     return (
         <Sec id="roadmap">
           <Width>
@@ -109,7 +112,9 @@ const Register9 = () => {
                 <img src={img} alt='' style={{height:'5rem',width:'5rem'}} />
                 <H>Registration completed successfully</H>
                 <H>Email successfully verified. You can now start fundraiser on DONOR platform.</H>
-                <Button style={{borderRadius:'0.5rem',width:'12rem',margin:'2rem 0 0.5rem 0'}}>
+                <Button style={{borderRadius:'0.5rem',width:'12rem',margin:'2rem 0 0.5rem 0'}}
+                    onClick={() => dispatch({type:'F1'}) }
+                >
                     Fundraise now
                 </Button>
             </Details>

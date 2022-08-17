@@ -7,6 +7,7 @@ import logo from '../../components/Navbar/logo.svg'
 //import { H } from '../Page2/Page2';
 import { FaAngleDown } from 'react-icons/fa';
 import Tag from './components/Tag';
+import { useDispatch } from 'react-redux';
 
 const Sec = styled.section`
     min-height: 100vh;
@@ -156,6 +157,9 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 `
 
 const FourmPage4 = () => {
+
+    const dispatch = useDispatch ();
+    
     return (
         <Sec>
             <Width>
@@ -201,7 +205,9 @@ const FourmPage4 = () => {
                                 <input type="Text" placeholder="Hi,my name is..."  className="input1" style={{height:"8rem",width:"10rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.75rem',width:'100%',margin:'2rem 0 0 0'}} />
                             </div>
                             <div style={{display:'grid',placeItems:'center'}}>
-                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}>
+                                <Button style={{borderRadius:'2rem',width:'9rem',margin:'2rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
+                                    onClick={() => dispatch({type:'F6'}) }
+                                >
                                     Next
                                 </Button>
                             </div>

@@ -183,7 +183,9 @@ const Register6 = () => {
     return (
         <Sec>
             <Width>
-                <Box>
+                <Box 
+                    onClick={() => dispatch({type:'PATHNAME7'}) }
+                >
                     
                         <Back style={{display:'flex',width:'90%',justifyContent:'flex-end'}}
                             onClick = {()=> dispatch({type:'BACK6'})}
