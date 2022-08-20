@@ -14,10 +14,10 @@ const Sec = styled.section`
        align-items: center;
        justify-content: center;
        background-color: rgba(249, 232, 202, 1);
+       padding: 8rem 0 2rem 0;
     @media only screen and (max-width: 768px) {
         min-height: 100vh;
         width: 100%;
-        padding: 2rem 0;
         flex-direction: column;
         justify-content: space-around;
       }
@@ -79,6 +79,7 @@ const Ht = styled.h1`
       }
 `;
 
+
 const Left = styled.div`
         width: 35%;
         display: flex;
@@ -87,18 +88,25 @@ const Left = styled.div`
         align-items: center;
         background-color: #FFF;
         border-radius: 1rem;
-        padding: 1rem;
-
+      padding: 1rem;
         //   @media only screen and (max-width: 1100px) {
         //     width: 50%;
         // }
    
 
-    @media only screen and (max-width: 998px) {
+    @media only screen and (max-width: 1250px) {
      
-        width: 100%;
-        padding: 1rem  0;
-      
+        width: 35rem;
+        padding: 1rem;
+        margin: 7rem 0 0 0;
+       
+      }
+
+      @media only screen and (max-width: 768px) {
+     
+        width: 95%;
+        padding: 1rem;
+        margin: 7rem 0 0 0;
        
       }
 `;
@@ -110,11 +118,17 @@ const Right = styled.div`
       align-items: center;
         width: 60%;
    
-        @media only screen and (max-width: 998px) {
+        @media only screen and (max-width: 1250px) {
      
             width: 100%;
-            margin: 0 0 4rem 0;
+            margin: 4rem 0 0 0;
           
+           
+          }
+        
+          @media only screen and (max-width: 1250px) {
+     
+            width: 95%;
            
           }
      
@@ -126,39 +140,58 @@ const Box = styled.div`
     min-height: 30rem;
     background-color: #FFDEA580 ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-          border-radius: 1rem;
+    border-radius: 1rem;
+    position: relative;
 
-    @media only screen and (max-width: 998px) {
+    @media only screen and (max-width: 1250px) {
         
-       flex-direction: column;
-       min-height: 30rem;
-       align-items: center;
-       justify-content: space-between;
-
-    }
+        flex-direction: column;
+        min-height: 30rem;
+        align-items: center;
+        justify-content: space-between;
+ 
+     }
 `
 
 const Back = styled.div`
     margin: 3rem 0;
     cursor: pointer;
-`
 
+    @media only screen and (max-width: 1250px) {
+        position: absolute;
+        top: 0;
+        right: 2rem;
+    }  
+
+`
 const Details = styled.div`
 background: linear-gradient(180deg, rgba(2, 169, 92, 0.5) 0%, rgba(34, 170, 48, 0.5) 100%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     border: 0.25rem solid #FFFFFF;
     border-radius: 1.25rem;
-    margin: 0 1rem 4rem 1rem;
+    margin: 0 1rem 4rem 4rem;
 
-    display: flex;
-    flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    @media only screen and (max-width: 1250px) {
+        width: 100%;
+        margin: 0 0 2rem 0;
+        padding: 3rem 0.5rem 2rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+
 `
 const Input = styled.input`
 
     width: 12rem;
+
+    @media only screen and (max-width: 768px) {
+        width: 18rem
+    } 
+
+
   
 `
 const H = styled.p`
@@ -178,6 +211,16 @@ const Flex = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 32rem;
+
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-gap: 2rem 0.5rem;
+   // place-items: center;
+  }
+
     `
 
 const Flex2 = styled.div`
@@ -186,6 +229,15 @@ const Flex2 = styled.div`
   justify-content: space-between;
   width: 40rem;
   margin: 2rem 0 0 0;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-gap: 2rem 0.5rem;
+   // place-items: center;
+  }
+
     `
 
 const Register4a = () => {
@@ -201,10 +253,10 @@ const Register4a = () => {
                             <img src={logo} alt='' style={{width:'5rem',height:'4.5rem',margin:'0 0 2rem 0'}} />
                         </div>
                         <Ht>
-                        DONOR platform has to verify your residence
+                            DONOR platform has to verify your residence
                         </Ht>
                         <T>
-                        Please upload your residence proof document here
+                            Please upload your residence proof document here
                         </T>
                     </Left>
                     
@@ -226,7 +278,7 @@ const Register4a = () => {
 
                         <Details>
                             <div style={{width:'100%'}}>
-                             <H style={{fontSize:'1.5rem',color:'#FFF',textAlign:'left',margin:'0 0 2rem 0'}}>ID proof document</H>
+                             <H style={{fontSize:'1.5rem',color:'#FFF',textAlign:'left',margin:'0 0 2rem 1rem'}}>ID proof document</H>
                             </div>
                             <Flex>
 
@@ -270,7 +322,7 @@ const Register4a = () => {
                                             height: "3.5rem",
                                         // border: "1px solid rgba(0,0,0,0.2)",
                                             borderRadius: "1.25rem",
-                                            width: '18rem',
+                                            //width: '18rem',
                                         }}
                                     />
                                 </div>

@@ -13,26 +13,21 @@ export const backgroundColor = theme("theme", {
     dark: "#E5E5E5",
   });  
 
-const Sec = styled.section`
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem  0;
-    background-color: rgba(249, 232, 202, 1);
-    background-repeat: no-repeat;
-    background-image: url();
-    background-size: 50% 70%;
-    background-position: right top !important;
-  
-    @media only screen and (max-width: 768px) {
-        width: 100%;
-        padding: 1rem 0 2rem 0;
-        flex-direction: column;
-        justify-content: space-around;
-      }
+  const Sec = styled.section`
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  // flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(249, 232, 202, 1);
+     padding: 8rem 0 2rem 0;
+  @media only screen and (max-width: 768px) {
+      min-height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 `;
 
 const Registration = styled.div`
@@ -164,6 +159,10 @@ background: linear-gradient(180deg, rgba(2, 169, 92, 0.5) 0%, rgba(34, 170, 48, 
 
     @media only screen and (max-width: 768px) {
       margin: 2rem 0 3rem 0;
+      padding: 3rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 `
 const Width = styled.div`

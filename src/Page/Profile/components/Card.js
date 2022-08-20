@@ -30,10 +30,10 @@ const Card = (props) => {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         border-radius: 0.75rem;
 
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 900px) {
             width: 98%;
-            
-            
+            flex-direction: column;
+            padding: 2rem 1rem;
         }
     `;
     const Upper = styled.div`
@@ -67,36 +67,36 @@ const Tc = styled(T)`
     color: #000;
     margin: 0;
     padding: 0 2rem;
+
+    @media only screen and (max-width: 900px) {
+        padding: 0;
+        text-align: center;
+    }
+    
 `
 
-const ButtonContainer = styled.div`
-      display: flex;
-        justify-content: center;
-        
-        justify-content: space-between;
-     width: 22rem;
-     margin: 0 0 2rem 0;
-     @media only screen and (max-width: 768px) {
-      width: 98%;
-      flex-direction: column;
+const Mid = styled.div`
+      
+    @media only screen and (max-width: 900px) {
+        margin: 2rem 0;
     }
 `
 
     return (
         <Box>
             
-            <div style={{margin:'0 0 0 0',display:'flex',alignItems:'center',width:'17rem',justifyContent:'space-between'}}>
+            <div style={{margin:'0 0 0 0',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
                 <img src={Tilt} alt='' style={{width:'5rem',height:'5rem',margin:' 0 0 0'}} />
-                <div>
+                <div style={{margin:'0 0 0 1rem'}}>
                     <T style={{margin:' 0 0 0',color:"#000",fontSize:'1rem'}}>Jel Chibuzo</T>
                     <p style={{color:'grey'}}>random</p>
                 </div>
             </div>
-            <div>
+            <Mid>
                 <Tc>
                 It is with heavy heart that we announce the passing of our beloved cheer coach Lauren Dobosz
                 </Tc>
-            </div>
+            </Mid>
             <div style={{display:'flex',alignItems:'center',width:'17rem',justifyContent:'space-between',flexDirection:'column'}}>
                 <Ts style={{margin:'0 0 0.5rem 0',fontSize:'1.25rem'}}>$ 4,80,00,362</Ts>
                 <Line />

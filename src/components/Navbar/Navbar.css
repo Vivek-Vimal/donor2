@@ -54,8 +54,9 @@
             list-style: none;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             /* background: aqua; */
-            width: 50rem;
+            width: 43rem;
             text-decoration: none;
             /* font-size: 1rem !important ; */
             /* margin-right: 10rem; */
@@ -66,7 +67,7 @@
           display: flex;
           justify-content: space-between;
           /* background: aqua; */
-          width: 50rem;
+          width: 43rem;
           text-decoration: none;
           /* font-size: 1rem !important ; */
           /* margin-right: 10rem; */

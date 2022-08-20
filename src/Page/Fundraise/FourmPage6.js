@@ -20,27 +20,30 @@ const Sec = styled.section`
     @media only screen and (max-width: 1100px) {
         
         flex-direction: column;
+        align-items: center;
         
       }
 `;
 
 const Width = styled.div`
-      width: 1100px;
-      height: 100%;
-      padding: 6rem 4rem;
+      width: 1300px;
       display: flex;
      // flex-direction: column;
         align-items: center;
         justify-content: space-between;
         background: #FFDEA580;
       border-radius: 1.75rem;
+      position: relative;
     
-    
+    @media only screen and (max-width: 1400px) {
+        width: 98%;
+    }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
-        width: 90%;
+        background: #FFDEA580;
     }
 `
+
 const InputContainer = styled.div`
     border: 1px solid rgba(0,0,0,0.2);
     display: flex;
@@ -109,13 +112,19 @@ const Details = styled.div`
 background: linear-gradient(180deg, rgba(2, 169, 92, 0.5) 0%, rgba(34, 170, 48, 0.5) 100%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    //padding: 3rem 2rem 2rem 2rem;
+
+    padding: 0 2rem 2rem 2rem;
     border: 0.25rem solid #FFFFFF;
     border-radius: 1.25rem;
-    //margin: 0 1rem 4rem 1rem;
+    margin: 2rem 1rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 1rem 2rem 1rem;
+    } 
 
 `
 

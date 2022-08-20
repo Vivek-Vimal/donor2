@@ -10,7 +10,7 @@ const StyledRaiser = styled.div`
    //justify-content: center;
     flex-direction: column;
     height: 100%;
-    padding: 2rem 0 0 0;
+    padding: 2rem 0;
 `
 
 const Head = styled.div`

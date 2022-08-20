@@ -19,6 +19,7 @@ const Sec = styled.section`
     @media only screen and (max-width: 1100px) {
         
         flex-direction: column;
+        align-items: center;
         
       }
 `;
@@ -31,12 +32,14 @@ const Width = styled.div`
         justify-content: space-between;
         background: #FFDEA580;
       border-radius: 1.75rem;
+      position: relative;
     
     @media only screen and (max-width: 1400px) {
         width: 98%;
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
+        background: #FFDEA580;
     }
 `
 const InputContainer = styled.div`
@@ -97,6 +100,8 @@ const Left = styled.div`
      
         @media only screen and (max-width: 1100px) {
             width: 100%;
+            margin: 6rem 0 0 0;
+            padding: 2rem 2rem 1rem 2rem;
         }
 
 `;
@@ -152,8 +157,18 @@ const Grid = styled.div`
    
 `
 const Back = styled.div`
-    margin: 2rem 4rem 1rem 0;
+     margin: 2rem 3rem 0 0;
+    cursor: pointer;
+
+    @media only screen and (max-width: 998px) {
+        position: absolute;
+        top: 1rem;
+        right: 0.5rem;
+        margin: 1rem 2rem 1rem 0;
+    }  
+
 `
+
 const Details = styled.div`
 
 
@@ -164,7 +179,11 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
     padding: 3rem 2rem 2rem 2rem;
     border: 0.25rem solid #FFFFFF;
     border-radius: 1.25rem;
-    margin: 0 1rem 4rem 1rem;
+    margin: 2rem 1rem 4rem 1rem;
+
+    @media only screen and (max-width: 768px) {
+        padding: 3rem 1rem 2rem 1rem;
+    } 
 
 `
 
@@ -204,7 +223,7 @@ const FourmPage5 = () => {
                                 <InputContainer>
                                     <Input type="image" src={I} alt="" className="input1" style={{height:'3rem',width:'3.5rem'}} />
                                     <div style={{margin:'1.5rem 0 0 0'}}>below 300 KB pdf format only</div>
-                                    <div style={{margin:'1.5rem 0 0 0',fontSize:'1.25rem'}}>You can upload up to 2 supporting documents</div>
+                                    <div style={{margin:'1.5rem 0 0 0',fontSize:'1.25rem',textAlign:'center'}}>You can upload up to 2 supporting documents</div>
                                 </InputContainer>
                                 <div style={{width:'100%',display:'flex',alignItems:'flex-end',justifyContent:"flex-end"}}>
                                     <Button style={{borderRadius:'2rem',width:'7rem',margin:'1rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'1.2rem',height:'3rem'}}>

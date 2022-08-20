@@ -16,10 +16,10 @@ const Sec = styled.section`
        align-items: center;
        justify-content: center;
        background-color: rgba(249, 232, 202, 1);
+       padding: 8rem 0 2rem 0;
     @media only screen and (max-width: 768px) {
         min-height: 100vh;
         width: 100%;
-        padding: 2rem 0;
         flex-direction: column;
         justify-content: space-around;
       }
@@ -45,7 +45,7 @@ const T = styled.p`
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 2rem;
-    text-align: left;
+    text-align: center;
     width: 100%;
     
     @media only screen and (max-width: 768px) {
@@ -60,6 +60,7 @@ const Ht = styled.h1`
     font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
+    text-align: center;
     
     @media only screen and (max-width: 768px) {
         font-weight: 510;
@@ -84,9 +85,17 @@ const Left = styled.div`
 
     @media only screen and (max-width: 998px) {
      
-        width: 100%;
+        width: 35rem;
         padding: 1rem  0;
-      
+        margin: 7rem 0 0 0;
+       
+      }
+
+      @media only screen and (max-width: 768px) {
+     
+        width: 95%;
+        padding: 1rem  0;
+        margin: 7rem 0 0 0;
        
       }
 `;
@@ -101,8 +110,14 @@ const Right = styled.div`
         @media only screen and (max-width: 998px) {
      
             width: 100%;
-            margin: 0 0 4rem 0;
+            margin: 4rem 0 0 0;
           
+           
+          }
+        
+          @media only screen and (max-width: 998px) {
+     
+            width: 95%;
            
           }
      
@@ -114,21 +129,29 @@ const Box = styled.div`
     min-height: 30rem;
     background-color: #FFDEA580 ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-          border-radius: 1rem;
+    border-radius: 1rem;
+    position: relative;
 
     @media only screen and (max-width: 998px) {
         
-       flex-direction: column;
-       min-height: 30rem;
-       align-items: center;
-       justify-content: space-between;
-
-    }
+        flex-direction: column;
+        min-height: 30rem;
+        align-items: center;
+        justify-content: space-between;
+ 
+     }
 `
 
 const Back = styled.div`
     margin: 3rem 0;
     cursor: pointer;
+
+    @media only screen and (max-width: 998px) {
+        position: absolute;
+        top: 0;
+        right: 2rem;
+    }  
+
 `
 const Details = styled.div`
 background: linear-gradient(180deg, rgba(2, 169, 92, 0.5) 0%, rgba(34, 170, 48, 0.5) 100%),
@@ -138,10 +161,20 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
     border-radius: 1.25rem;
     margin: 0 1rem 4rem 1rem;
 
+    @media only screen and (max-width: 998px) {
+        width: 100%;
+        margin: 0 0 2rem 0;
+        padding: 3rem 0.5rem 2rem 0.5rem;
+    } 
+
 `
 const Input = styled.input`
 
     width: 20rem;
+
+    @media only screen and (max-width: 998px) {
+        width: 100%;
+    } 
   
 `
 const H = styled.p`

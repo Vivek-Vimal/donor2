@@ -15,14 +15,15 @@ const Sec = styled.section`
        align-items: center;
        justify-content: center;
        background-color: rgba(249, 232, 202, 1);
+       padding: 8rem 0 2rem 0;
     @media only screen and (max-width: 768px) {
         min-height: 100vh;
         width: 100%;
-        padding: 2rem 0;
         flex-direction: column;
         justify-content: space-around;
       }
 `;
+
 
 const Width = styled.div`
       width: 1300px;
@@ -137,11 +138,27 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
     border: 0.25rem solid #FFFFFF;
     border-radius: 1.25rem;
     margin: 0 1rem 4rem 1rem;
-    width: 75%;
     display: flex;
     flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+
+    @media only screen and (max-width: 1180px) {
+        width: 90%;
+        margin: 0 0 2rem 0;
+        padding: 3rem 0.5rem 2rem 0.5rem;
+    } 
+
+
+    @media only screen and (max-width: 768px) {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+
 `
 const Man = styled.div`
 

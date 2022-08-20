@@ -21,6 +21,7 @@ const Sec = styled.section`
     @media only screen and (max-width: 1100px) {
         
         flex-direction: column;
+        align-items: center;
         
       }
 `;
@@ -33,12 +34,14 @@ const Width = styled.div`
         justify-content: space-between;
         background: #FFDEA580;
       border-radius: 1.75rem;
+      position: relative;
     
     @media only screen and (max-width: 1400px) {
         width: 98%;
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
+        background: #FFDEA580;
     }
 `
 
@@ -85,6 +88,7 @@ const Left = styled.div`
      
         @media only screen and (max-width: 1100px) {
             width: 100%;
+            margin: 6rem 0 0 0;
         }
 
 `;
@@ -102,7 +106,7 @@ const Right = styled.div`
 
         @media only screen and (max-width: 1100px) {
             width: 100%;
-            margin: 3rem 0 0 0;
+            margin: 3rem 0 0 0 !important;
         }
 
 `;
@@ -139,9 +143,19 @@ const Grid = styled.div`
      grid-gap: 2rem 0.5rem;
    
 `
+
 const Back = styled.div`
-    margin: 2rem 4rem 1rem 0;
+     margin: 1rem 2rem 1rem 0;
+    cursor: pointer;
+
+    @media only screen and (max-width: 998px) {
+        position: absolute;
+        top: 1rem;
+        right: 0.5rem;
+    }  
+
 `
+
 const Details = styled.div`
 
 

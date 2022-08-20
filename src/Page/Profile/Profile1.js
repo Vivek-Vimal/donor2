@@ -16,12 +16,13 @@ const Sec = styled.section`
     display: flex;
     padding: 8rem 0 4rem 0;
     // flex-direction: column;
-      // align-items: center;
+     //  align-items: center;
        justify-content: center;
        background-color: rgba(249, 232, 202, 1);
     @media only screen and (max-width: 1100px) {
         
         flex-direction: column;
+        align-items: center;
         
       }
 `;
@@ -40,6 +41,7 @@ const Width = styled.div`
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
+        //justify-content: center;
     }
 `
 
@@ -135,10 +137,39 @@ const Flex = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 2.5rem 0;
+
+    @media only screen and (max-width: 1250px) {
+        width: 100%;  
+    }
+
+    @media only screen and (max-width: 920px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    //background: red;
+
+    }
+
 `
 
 const Container =  styled.div`
     margin: 4rem 2rem 2rem 2rem;
+
+    @media only screen and (max-width: 768px) {
+        margin: 2rem;
+    }
+
+`
+const Input = styled.input`
+    width: 25rem;
+    @media only screen and (max-width: 768px) {
+        width: 80%;
+    }
+`
+const Second = styled.div`
+    @media only screen and (max-width: 920px) {
+       margin: 2rem 0 0 0;
+    }
 `
 
 const Profile1 = () => {
@@ -243,14 +274,14 @@ const Profile1 = () => {
                                     <T style={{margin:'0 0 0 0',fontSize:'1.5rem',color:'#000'}}>
                                         E-mail
                                     </T>
-                                    <input type="e-mail" placeholder="xyz@gmail.com"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',width:'25rem',margin:'0.5rem 0 0 0'}} />
+                                    <Input type="e-mail" placeholder="xyz@gmail.com"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',margin:'0.5rem 0 0 0'}} />
                                 </div> 
-                                <div>
+                                <Second>
                                     <T style={{margin:'0 0 0 0',fontSize:'1.5rem',color:'#000'}}>
                                         Date Of Birth
                                     </T>
-                                    <input type="Number" placeholder="01/12/23"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',width:'25rem',margin:'0.5rem 0 0 0'}} />
-                                </div> 
+                                    <Input type="Number" placeholder="01/12/23"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',margin:'0.5rem 0 0 0'}} />
+                                </Second> 
 
                             </Flex>
 
@@ -259,14 +290,14 @@ const Profile1 = () => {
                                     <T style={{margin:'0 0 0 0',fontSize:'1.5rem',color:'#000'}}>
                                         Phone Number
                                     </T>
-                                    <input type="Number" placeholder="9001-111"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',width:'25rem',margin:'0.5rem 0 0 0'}} />
+                                    <Input type="Number" placeholder="9001-111"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',margin:'0.5rem 0 0 0'}} />
                                 </div> 
-                                <div>
+                                <Second>
                                     <T style={{margin:'0 0 0 0',fontSize:'1.5rem',color:'#000'}}>
                                         Country
                                     </T>
-                                    <input type="text" placeholder="USA"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',width:'25rem',margin:'0.5rem 0 0 0'}} />
-                                </div> 
+                                    <Input type="text" placeholder="USA"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',margin:'0.5rem 0 0 0'}} />
+                                </Second> 
 
                             </Flex>
 
@@ -274,7 +305,7 @@ const Profile1 = () => {
                                 <T style={{margin:'0 0 0 0',fontSize:'1.5rem',color:'#000'}}>
                                     Address
                                 </T>
-                                <input type="text" placeholder="2A, Block 1"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',width:'25rem',margin:'0.5rem 0 0 0'}} />
+                                <input type="text" placeholder="2A, Block 1"  className="input1" style={{height:"4rem",border:'1px solid rgba(0,0,0,0.2)',borderRadius:'0.5rem',margin:'0.5rem 0 0 0'}} />
                             </div>  
                         </Container>
 

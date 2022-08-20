@@ -10,7 +10,7 @@ const bColor = theme("theme", {
 export const StyledBurger = styled.button`
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

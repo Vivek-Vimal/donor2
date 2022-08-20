@@ -19,6 +19,7 @@ const Sec = styled.section`
     @media only screen and (max-width: 1100px) {
         
         flex-direction: column;
+        align-items: center;
         
       }
 `;
@@ -31,12 +32,14 @@ const Width = styled.div`
         justify-content: space-between;
         background: #FFDEA580;
       border-radius: 1.75rem;
+      position: relative;
     
     @media only screen and (max-width: 1400px) {
         width: 98%;
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
+        background: #FFDEA580;
     }
 `
 const InputContainer = styled.div`
@@ -48,6 +51,10 @@ const InputContainer = styled.div`
     height: 25rem;
     border-radius: 0.75rem;
     background-color: #FFF;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 const Input = styled.input`
@@ -97,6 +104,7 @@ const Left = styled.div`
      
         @media only screen and (max-width: 1100px) {
             width: 100%;
+            margin: 6rem 0 0 0;
         }
 
 `;
@@ -148,12 +156,21 @@ const Grid = styled.div`
     width: 100%;
     margin: 3rem 0 0 0;
     grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-     grid-gap: 2rem 0.5rem;
+    grid-gap: 2rem 0.5rem;
    
 `
 const Back = styled.div`
-    margin: 2rem 4rem 1rem 0;
+     margin: 1rem 2rem 1rem 0;
+    cursor: pointer;
+
+    @media only screen and (max-width: 998px) {
+        position: absolute;
+        top: 1rem;
+        right: 0.5rem;
+    }  
+
 `
+
 const Details = styled.div`
 
 
@@ -165,6 +182,10 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
     border: 0.25rem solid #FFFFFF;
     border-radius: 1.25rem;
     margin: 0 1rem 4rem 1rem;
+
+    @media only screen and (max-width: 768px) {
+        padding: 3rem 1rem 2rem 1rem;
+    } 
 
 `
 

@@ -104,6 +104,8 @@ const Mobile = styled.div`
   display: none;
   @media only screen and (max-width: 1200px) {
     display: block;
+    //margin: 0 2rem 0 0;
+    background: red;
   }`
 
 const PC = styled.div`
@@ -130,10 +132,10 @@ export const IconContainer = styled.div`
   
   margin: 0 8vw 0 2rem;
   @media only screen and (max-width: 1600px) {
-    margin: 0 1rem 0 0;
+    margin: 0 6rem 0 0;
   }
   @media only screen and (max-width: 1200px) {
-    margin: 0 6rem 0 0;
+    margin: 0 10rem 0 0;
   }
   @media only screen and (max-width: 768px) {
     display: none;
@@ -179,7 +181,7 @@ const changeBackground = () => {
         <nav className={navbar ?  "navActiveLight": "nav"} >
 
          
-          <Link1 to="/" spy={true} smooth={true} ><img src={logo} alt="Logo" className={navbar ? "LogoActive" : "Logo"} /> <span style={{margin:'0.5rem 0 0 -0.5rem'}}>Donor</span></Link1>
+          <Link1 to="/" spy={true} smooth={true} ><img src={logo} alt="Logo" className={navbar ? "LogoActive" : "Logo"} /> <span style={{margin:'0 0 0 -0.5rem'}}>Donor</span></Link1>
           
           <RightContainer>
         
