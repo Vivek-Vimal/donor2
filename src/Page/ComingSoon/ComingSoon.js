@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
-import { H } from '../Home/Page2/Page2';
+import { H } from '../FundraiserHome/JoyCard/JoyCard';
 
 const Sec = styled.section`
     min-height: 100vh;

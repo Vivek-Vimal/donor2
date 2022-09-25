@@ -4,7 +4,7 @@ import './Footer.css'
 import bg from './foot.png'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Image } from '../../components/Navbar/Navbar'
-import { T,H } from '../Home/Page2/Page2'
+import { T,H } from '../FundraiserHome/JoyCard/JoyCard'
 import dis from '../../components/Navbar/Discord.png'
 import twi from '../../components/Navbar/Twitter.png'
 import med from '../../components/Navbar/Medium.png'

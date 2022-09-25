@@ -4,7 +4,7 @@ import theme from 'styled-theming';
 import Tilt from 'react-parallax-tilt';
 import frame from './Frame.png'
 import { motion } from 'framer-motion';
-import { T } from '../../Page/Home/Page2/Page2'
+import { T } from '../../Page/FundraiserHome/JoyCard/JoyCard'
 
 export const backgroundColor = theme("theme", {
     light: "#000000",

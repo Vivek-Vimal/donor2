@@ -1,22 +1,22 @@
 import React from 'react'
-import Home from './Page1/Home'
-import Page2 from './Page2/Page2'
-import Page7 from './Page7/Page7'
-import Page4 from './Page4/Page4'
-import Page3 from './Page3/Page3'
-import Page3a from './Page3a/Page3a'
-import Page6 from './Page6/Page6'
+import FrontPage from './FrontPage/FrontPage'
+import Different from './Different/Different'
+import BlockChain from './BlockChain/BlockChain'
+import FundraiseCard from './FundraiseCard/FundraiseCard'
+import DonateCard from './DonateCard/DonateCard'
+import Community from './Community/Community'
+import Feature from './Feature/Feature'
 
 const LadingPage = () => {
   return (
     <>
-      <Home />
-      <Page7 />
-      <Page4 />
-      <Page2 />
-      <Page3 />
-      <Page3a />
-      <Page6 />
+      <FrontPage />
+      <BlockChain />
+      <FundraiseCard />
+      <Different />
+      <DonateCard />
+      <Community />
+      <Feature />
     </>
   )
 }

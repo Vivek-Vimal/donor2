@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import theme from 'styled-theming';
 import Tilt from 'react-parallax-tilt';
-import { H, T } from '../../Page/Home/Page2/Page2'
+import { H, T } from '../../Page/FundraiserHome/JoyCard/JoyCard'
 import { Line, Circle } from 'rc-progress';
 import { Button } from '../Navbar/Navbar';
 import wp from './wp.svg';

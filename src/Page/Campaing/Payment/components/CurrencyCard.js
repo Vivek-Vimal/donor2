@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Tilt from 'react-parallax-tilt';
-import { H, T } from '../../../Home/Page2/Page2'
+import { H, T } from '../../../FundraiserHome/JoyCard/JoyCard'
 import { FaAngleDown } from 'react-icons/fa';
 import './CurrencyCard.css'
 import { useDispatch } from 'react-redux';

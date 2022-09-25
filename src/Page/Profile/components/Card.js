@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import theme from 'styled-theming';
 import Tilt from './pro.png';
-import { H, T } from '../../Home/Page2/Page2'
+import { H, T } from '../../FundraiserHome/JoyCard/JoyCard'
 import { Line, Circle } from 'rc-progress';
 
 export const backgroundColor = theme("theme", {

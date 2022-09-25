@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import theme from 'styled-theming';
 import Tilt from 'react-parallax-tilt';
-import { H, T } from '../../Page/Home/Page2/Page2'
+import { H, T } from '../../Page/FundraiserHome/JoyCard/JoyCard'
 import { Button } from '../Navbar/Navbar';
 
 export const backgroundColor = theme("theme", {
