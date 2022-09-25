@@ -1,7 +1,6 @@
 import React,{ useState, useEffect} from 'react'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
-import img from './bg.png'
+import img from './support.png'
 
 const HomePage = styled.section`
   display: flex;
@@ -25,8 +24,8 @@ const HomePage = styled.section`
 const Width = styled.div`
       width: 1400px;
       height: 35rem;
-      // display: flex;
-      //   align-items: center;
+       display: flex;
+       align-items: center;
       //   justify-content: space-between;
         background-color: #98C87D;
         background-image: url(${img});
@@ -58,16 +57,16 @@ const Width = styled.div`
 `
 
 const Ht = styled.h1`
-    color: #FFF;
+    color: #000;
     font-size: 4.5rem;
     margin-bottom: 2rem;
     text-align: left;
     //font-family: 'PT Serif', serif !important;
     line-height: 1.15;
     max-width: 998px;
-    margin: 0 2rem;
-    position: absolute;
-    bottom: 4rem;
+    margin: 0 0 0 5rem;
+    // position: absolute;
+    // bottom: 4rem;
 
     @media only screen and (max-width: 1300px) {
       font-size: 4rem;
@@ -88,6 +87,22 @@ const Ht = styled.h1`
       }
 `;
 
+const Button = styled.button`
+    background-color: rgba(2, 169, 92, 1);
+    border: none;
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+    color: #FFF;
+    font-size: 1.2rem;
+    height: 3.5rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: fixed;
+    top: 75%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+`
+
 
 const Page1 = () => {
 
@@ -97,6 +112,8 @@ const Page1 = () => {
           <Width>
               
             <Ht>Helping each other is human nature</Ht>
+
+            <Button style={{margin:'5rem 0 0 0',height:'4.5rem',width:'15rem',fontSize:'1.5rem'}}>Fundraise Now</Button>
                 
           </Width>
         

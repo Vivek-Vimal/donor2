@@ -16,13 +16,10 @@ export const backgroundColor = theme("theme", {
   });
 
 const Width = styled.div`
-      width: 1300px;
- 
-   display: flex;
-   flex-direction: column;
-
-    //align-items: center;
-    //justify-content: center;
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
      
     @media only screen and (max-width: 1300px) {
         width: 98%;
@@ -31,17 +28,13 @@ const Width = styled.div`
 `;
 
 const StyleCard = styled.div`
-      width: 70%;
-      display: grid;
-    
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
- 
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
  
       @media only screen and (max-width: 1600px) {
         width: 98%;
-     
       }
-
 
       @media only screen and (max-width: 510px) {
     
@@ -52,7 +45,7 @@ const StyleCard = styled.div`
 
 const Heading = styled.div`
     color: rgba(2, 169, 92, 1);
-    font-size: 1.8rem;
+    font-size: 2.5rem;
       margin: 0.5rem 0 2rem 0;
       font-weight: bold;
      text-align: center;
@@ -66,14 +59,10 @@ const Heading = styled.div`
 `;
 
 const Background = styled.div`
-    //background-color: rgba(0, 29, 35, 1);
     width: 100%;
     display: flex;
     justify-content: space-between;
-  // align-items: center;
-    //
-  
-      position: relative;
+    position: relative;
 
       @media only screen and (max-width: 1200px) {
         flex-direction: column;
@@ -92,37 +81,12 @@ const Category = styled.div`
     padding: 2rem 1rem;
     margin: 2rem 0 0 0;
     border-radius: 0 1.2rem 1.2rem 0;
- 
-    //box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-    @media only screen and (max-width: 1350px) {
-     
-      
-    }
 
     @media only screen and (max-width: 510px) {
       width: 95%;
     }
 `;
 
-const Hs = styled(H)`
-   
-    font-size: 2rem;
-    margin: 0.5rem 0 2rem 0;
-
-    @media only screen and (max-width: 768px) {
-        font-weight: 510;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-`;
-
-const Mid = styled.div`
-    margin: 0 1rem;
-    @media only screen and (max-width: 1350px) {
-      margin: 0;
-    }
-`
 const Line = styled.div`
     background: rgba(196, 196, 196, 0.3);
     width: 100%;
@@ -131,28 +95,6 @@ const Line = styled.div`
     @media only screen and (max-width: 1350px) {
       //width: 20rem;
     }
-`
-const LeftArrow = styled(TiArrowLeftOutline)`
-      font-size: 4rem;
-      cursor: pointer;
-      color: rgba(2,169,92,1);
-      //margin: 0 5rem 0 0;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    
-`
-const RightArrow = styled(TiArrowRightOutline)`
-      font-size: 4rem;
-      cursor: pointer;
-      color: rgba(2,169,92,1);
-     // margin: 0 0 0 5rem;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      
 `
 
 const resposive =  {
@@ -217,7 +159,7 @@ const Page4 = (props) => {
         <Sec id="fund">
           <Width>
             <Heading>
-              You can search by category or donate directly to a fundraiser of your option
+              You can search by category or <div/>donate directly to a fundraiser of your option
             </Heading>
             
           </Width>

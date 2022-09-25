@@ -30,12 +30,12 @@ const Sec = styled.section`
 `;
 
 const Width = styled.div`
-      width: 1300px;
+      width: 1500px;
       display: flex;
      // flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background: #FFDEA580;
+       
       border-radius: 1.75rem;
       position: relative;
     
@@ -44,7 +44,7 @@ const Width = styled.div`
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
-        background: #FFDEA580;
+     
     }
 `
 const Flex = styled.div`
@@ -73,8 +73,7 @@ const T = styled.p`
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 2rem;
-   // text-align: center;
-    //width: 20rem;
+ 
 
     @media only screen and (max-width: 768px) {
         font-weight: 510;
@@ -120,12 +119,6 @@ const Right = styled.div`
 
 `;
 
-const Line = styled.div`
-    width: 100%;
-    height: 1px;
-    background: rgba(0,0,0,0.2);
-    margin: 3rem 0 0 0;
-`
 const Margin = styled.div`
     margin: 5rem 0 0 0;
 
@@ -134,14 +127,6 @@ const Margin = styled.div`
         margin: 3rem 0 0 0;
     }
 
-`
-const MarginLeft = styled.div`
-    margin: 0 1rem 0 4rem;
-
-    @media only screen and (max-width: 1100px) {
-        
-        margin: 0 1rem;
-    }
 `
 
 const Grid = styled.div`

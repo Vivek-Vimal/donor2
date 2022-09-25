@@ -10,13 +10,13 @@ import Page6 from './Page6/Page6'
 const LadingPage = () => {
   return (
     <>
-        <Home />
-                                <Page7 />
-                                <Page4 />
-                                <Page2 />
-                                <Page3 />
-                                <Page3a />
-                                <Page6 />
+      <Home />
+      <Page7 />
+      <Page4 />
+      <Page2 />
+      <Page3 />
+      <Page3a />
+      <Page6 />
     </>
   )
 }

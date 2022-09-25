@@ -32,8 +32,6 @@ const H = styled.h1`
   color: #FFF;
   font-size: 1.75rem;
   font-weight: 400;
-  margin: 1.5rem 0 0 0;
-
 
 @media only screen and (max-width: 768px) {
     font-weight: 510;
@@ -41,20 +39,6 @@ const H = styled.h1`
     //font-weight: bold;
     text-align: center;
   }
-`;
-
-
-const T = styled.p`
-    color: #FFF;
-    font-weight: 500;
-    font-size: 1.4rem;
-    margin: 0.5rem 0 1.5rem 0;
-    text-align: center;
- 
-    @media only screen and (max-width: 768px) {
-        font-weight: 510;
-        font-size: 1rem;
-      }
 `;
 
 
@@ -110,9 +94,9 @@ const Register9 = () => {
         <Sec id="roadmap">
           <Width>
             <Details>
-                <img src={img} alt='' style={{height:'5rem',width:'5rem'}} />
-                <H>Registration completed successfully</H>
-                <H>Email successfully verified. You can now start fundraiser on DONOR platform.</H>
+                <img src={img} alt='' style={{height:'5rem',width:'5rem',margin:'0 0 2rem 0'}} />
+                <H>Registration completed and Email verified.</H>
+                <H>You can now start a fundraiser on DONOR platform.</H>
                 <Button style={{borderRadius:'0.5rem',width:'12rem',margin:'2rem 0 0.5rem 0'}}
                     onClick={() => dispatch({type:'F1'}) }
                 >

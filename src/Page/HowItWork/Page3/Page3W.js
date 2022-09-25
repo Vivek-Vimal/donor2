@@ -78,10 +78,56 @@ const GridAuto = styled.div`
  
 }
 `
+const Width = styled.div`
+      width: 1300px;
+      display: flex;
+      flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    @media only screen and (max-width: 1400px) {
+        width: 95%;
+    }
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+`
+const WidthM = styled.div`
+ 
+      display: none;
+     
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+`
+
 const Img = styled.div`
     height: 14rem;
     width: 12rem;
     margin: 2rem 0 0 0;
+`
+const Flex = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+const FlexSmall = styled.div`
+    width: 40rem;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 0 0;
+  @media only screen and (max-width: 998px) {
+    width: 35rem;
+}
+@media only screen and (max-width: 888px) {
+  width: 30rem;
+}
 `
 
 const Page3H = () => {
@@ -89,13 +135,25 @@ const Page3H = () => {
     return (
         <Sec id="">
 
-            <GridAuto>
+            <Width>
+              <Flex>
                 <Img><img src={i1} alt='' style={{height:'100%',width:'100%'}} /></Img>
                 <Img><img src={i2} alt='' style={{height:'100%',width:'100%'}} /></Img>
                 <Img><img src={i3} alt='' style={{height:'100%',width:'100%'}} /></Img>
+              </Flex>
+              <FlexSmall>
                 <Img><img src={i4} alt='' style={{height:'100%',width:'100%'}} /></Img>
                 <Img><img src={i5} alt='' style={{height:'100%',width:'100%'}} /></Img>
-            </GridAuto>
+              </FlexSmall>
+            </Width>
+
+            <WidthM>
+              <Img><img src={i1} alt='' style={{height:'100%',width:'100%'}} /></Img>
+              <Img><img src={i4} alt='' style={{height:'100%',width:'100%'}} /></Img>
+              <Img><img src={i2} alt='' style={{height:'100%',width:'100%'}} /></Img>
+              <Img><img src={i5} alt='' style={{height:'100%',width:'100%'}} /></Img>
+              <Img><img src={i3} alt='' style={{height:'100%',width:'100%'}} /></Img>
+            </WidthM>
 
         </Sec>
     )

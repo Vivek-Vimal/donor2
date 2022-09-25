@@ -31,7 +31,7 @@ const Width = styled.div`
      // flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background: #FFDEA580;
+       
       border-radius: 1.75rem;
       position: relative;
     
@@ -40,23 +40,8 @@ const Width = styled.div`
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
-        background: #FFDEA580;
+        
     }
-`
-
-const InputContainer = styled.div`
-    border: 1px solid rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 25rem;
-    border-radius: 0.75rem;
-    background-color: #FFF;
-`
-
-const Input = styled.input`
-    
 `
 
 const H = styled.p`
@@ -72,21 +57,6 @@ const H = styled.p`
       }
 `;
 
-
-const T = styled.p`
-    color: #FFF;
-    font-weight: 500;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-   // text-align: center;
-    //width: 20rem;
-
-    @media only screen and (max-width: 768px) {
-        font-weight: 510;
-        font-size: 1rem;
-        
-      }
-`;
 
 const Right = styled.div`
         display: flex;
@@ -148,7 +118,7 @@ const FourmPage6 = () => {
                                 <Button style={{borderRadius:'2rem',width:'12rem',margin:'0 0 2rem 0',border:'2px solid #FFFFFF',fontSize:'2rem'}}
                                     
                                 >
-                                   <Link to='/' style={{textDecoration:'none',color:'#fff'}}>Continue</Link> 
+                                   <Link to='/profile' style={{textDecoration:'none',color:'#fff'}}>Continue</Link> 
                                 </Button>
                             </div>
                         </Details>

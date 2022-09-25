@@ -3,6 +3,7 @@ import Home from './Page1/Home'
 import Page2 from './Page2/Page2'
 import Page4 from './Page4/Page4'
 import Page7 from './Page7/Page7'
+import { Link as RouterLink } from 'react-router-dom'
 
 const HomeDefault = () => {
   return (

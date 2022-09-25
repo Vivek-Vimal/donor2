@@ -26,7 +26,7 @@ const Sec = styled.section`
 `;
 
 const Width = styled.div`
-      width: 1300px;
+      width: 1500px;
       display: flex;
      // flex-direction: column;
         align-items: center;
@@ -127,8 +127,6 @@ const Box = styled.div`
     display: flex;
     width: 95%;
     min-height: 30rem;
-    background-color: #FFDEA580 ;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 1rem;
     position: relative;
 
@@ -191,13 +189,6 @@ const H = styled.p`
 `;
 
 const Register2 = () => {
-
-//     const navigate = useNavigate ();
-
-// const naviagtePath = ()=>{
-//     let path = `/`;
-//     navigate(path);
-// }
 
 const dispatch = useDispatch();
 

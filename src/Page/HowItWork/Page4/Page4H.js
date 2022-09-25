@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-// import img from '../../components/Navbar/logo.png'
-import Tilt from 'react-parallax-tilt';
-import theme from "styled-theming";
 import i1 from './1.png';
 import i2 from './2.png';
 import i3 from './3.png';
-import { Button } from '../../../components/Navbar/Navbar';
 
 const Sec = styled.section`
 
@@ -83,6 +79,7 @@ const Right = styled.div`
     }
 `
 
+
 const Page4H = () => {
   
     return (
@@ -114,8 +111,6 @@ const Page4H = () => {
                     <img src={i3} alt='' style={{height:'100%',width:'100%'}} />
                 </Right>
             </Center>
-
-            <Button style={{margin:'5rem 0 0 0',height:'4.5rem',width:'15rem',fontSize:'1.5rem'}}>Fundraise Now</Button>
 
         </Sec>
     )

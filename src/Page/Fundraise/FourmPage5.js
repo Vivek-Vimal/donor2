@@ -25,12 +25,12 @@ const Sec = styled.section`
 `;
 
 const Width = styled.div`
-      width: 1300px;
+      width: 1500px;
       display: flex;
      // flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background: #FFDEA580;
+       
       border-radius: 1.75rem;
       position: relative;
     
@@ -39,7 +39,7 @@ const Width = styled.div`
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
-        background: #FFDEA580;
+        
     }
 `
 const InputContainer = styled.div`
@@ -226,7 +226,7 @@ const FourmPage5 = () => {
                                     <div style={{margin:'1.5rem 0 0 0',fontSize:'1.25rem',textAlign:'center'}}>You can upload up to 2 supporting documents</div>
                                 </InputContainer>
                                 <div style={{width:'100%',display:'flex',alignItems:'flex-end',justifyContent:"flex-end"}}>
-                                    <Button style={{borderRadius:'2rem',width:'7rem',margin:'1rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'1.2rem',height:'3rem'}}>
+                                    <Button style={{borderRadius:'2rem',width:'8rem',margin:'1rem 0 0 0',border:'2px solid #FFFFFF',fontSize:'1.2rem',height:'3rem'}}>
                                         Upload
                                     </Button>
                                 </div>

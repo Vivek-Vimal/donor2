@@ -5,7 +5,6 @@ import bg from './bg.png'
 import { H,T } from '../Page2/Page2'
 import img1 from './1.svg'
 import img2 from './2.svg'
-import img3 from './3.svg'
 import img4 from './4.svg'
 import img5 from './5.svg'
 

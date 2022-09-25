@@ -25,12 +25,12 @@ const Sec = styled.section`
 `;
 
 const Width = styled.div`
-      width: 1300px;
+      width: 1500px;
       display: flex;
      // flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background: #FFDEA580;
+       
       border-radius: 1.75rem;
       position: relative;
     
@@ -39,7 +39,7 @@ const Width = styled.div`
     }
     @media only screen and (max-width: 1100px) {
         flex-direction: column;
-        background: #FFDEA580;
+       
     }
 `
 const InputContainer = styled.div`
@@ -127,12 +127,7 @@ const Right = styled.div`
 
 `;
 
-const Line = styled.div`
-    width: 100%;
-    height: 1px;
-    background: rgba(0,0,0,0.2);
-    margin: 3rem 0 0 0;
-`
+
 const Margin = styled.div`
     margin: 5rem 0 0 0;
 
@@ -142,23 +137,7 @@ const Margin = styled.div`
     }
 
 `
-const MarginLeft = styled.div`
-    margin: 0 1rem 0 4rem;
 
-    @media only screen and (max-width: 1100px) {
-        
-        margin: 0 1rem;
-    }
-`
-
-const Grid = styled.div`
-    display: grid;
-    width: 100%;
-    margin: 3rem 0 0 0;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    grid-gap: 2rem 0.5rem;
-   
-`
 const Back = styled.div`
      margin: 1rem 2rem 1rem 0;
     cursor: pointer;

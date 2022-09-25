@@ -4,16 +4,11 @@ import './Bg.css'
 import { motion } from 'framer-motion'
 import img from './support.svg'
 import { useSelector, useDispatch } from "react-redux";
-import theme from "styled-theming";
 import { BsBoxArrowUp } from 'react-icons/bs';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from '../../../components/Navbar/Navbar';
 import { useWallet } from 'use-wallet'
-
-// const iconColor = theme("theme", {
-//     light: "linear-gradient(to right, #0f0c29, #302b63, #24243e)",
-//     dark: "linear-gradient(to right, #fc00ff, #00dbde)",
-//   });  
+import { Link as RouterLink } from 'react-router-dom'
 
 
 const HomePage = styled.section`
@@ -190,6 +185,20 @@ const ButtonR = styled(Button)`
     margin: 1rem 0 0 0;
   }
 `
+const ButtonL = styled(RouterLink)`
+  background-color: rgba(2, 169, 92, 1);
+  border: none;
+  border-radius: 2rem;
+  padding: 0 1.5rem;
+  color: #FFF;
+  font-size: 1.2rem;
+  height: 3.5rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+`
 
 const Home = () => {
 
@@ -250,9 +259,14 @@ const Home = () => {
                 <Ht>Support the cause thats close <div style={{color:'rgba(2, 169, 92, 1)',fontFamily:'PT Serif'}}> to your heart</div> </Ht>
                 <T> <span style={{color:'rgba(2, 169, 92, 1)'}}>People-powered philanthropy</span> bestowing earnings while connecting donors of <span style={{color:'rgba(2, 169, 92, 1)'}}>cryptocurrencies</span> with grassroot not-for-profit fundraising <span style={{color:'rgba(2, 169, 92, 1)'}} >around the world.</span></T>
                 <ButtonContainer>
-                  {
-                  renderButton()
-                  }
+               
+
+                    <ButtonL type='button'
+                      style={{padding:'0 1rem',minWidth:'11rem'}}
+                     to="fundraiser"
+                    >
+                      Donate
+                    </ButtonL>
 
                   <ButtonR
                     to="fund" spy={true} smooth={true} offset={-80}

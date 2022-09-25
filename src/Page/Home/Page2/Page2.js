@@ -1,15 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-// import img from '../../components/Navbar/logo.png'
-import Tilt from 'react-parallax-tilt';
 import bg from './bg.svg'
 import theme from "styled-theming";
-import left from './king.jpg'
-import right from './right.png'
-import { motion } from 'framer-motion'
-import element from './element.png'
 import { Button } from '../../../components/Navbar/Navbar';
-import frame from './Frame.png'
 
 export const backgroundColor = theme("theme", {
     light: "#000000",
@@ -22,11 +15,11 @@ const Sec = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height:  45rem;
+    // min-height:  45rem;
     background-color: rgba(249, 232, 202, 1) ;
     width: 100%;
   
-    padding: 10rem 0 0 0;
+    padding: 8rem 0 0 0;
     
     @media only screen and (max-width: 768px) {
         
@@ -96,21 +89,11 @@ const Page2 = () => {
         <Sec id="">
 
             <Center>
-              <H>How are we different</H>
+              <H>Experience the joy of giving!!</H>
               <T>
-                We are like "gofundme" of the crypto-world. The differences between
-                DONOR and GOFUNDME are - we help people from any part of the world,
-                we ensure each cent is utilised for the purpose, and all on a
-                blockchain platform managed by the community.
+                Giving is not just to make donation, its about making a difference. And its not how much we give but how much love we put into giving
               </T>
-              <Button 
-                to="donate" spy={true} smooth={true} offset={150}
-                style={{width:'13rem'}}>
-                Donate now
-              </Button>
             </Center>
-
-            
 
         </Sec>
     )

@@ -7,10 +7,10 @@ import Page4H from './Page4/Page4H'
 const Work = () => {
   return (
     <>
-        <Page1 />
-        <Page2H />
-        <Page3H />
-        <Page4H />
+      <Page1 />
+      <Page2H />
+      <Page3H />
+      <Page4H />
     </>
   )
 }

@@ -62,10 +62,6 @@ const Ts = styled(T)`
     font-size: 1rem;
     font-weight: bold;
 `
-const Hs = styled(H)`
-    font-size: 1.5rem;
-    font-weight: bold;
-`
 
 const ButtonContainer = styled.div`
       display: flex;
@@ -112,16 +108,11 @@ const dispatch = useDispatch();
                 <StyledLine 
                       style={{}}
                             percent="50" strokeWidth="1.9"
-                            strokeColor="#02A95C" trailColor="#DBDBDB" 
-                            // gapPosition="2rem 2rem 1rem 1rem"
-                          
+                            strokeColor="#02A95C" trailColor="#DBDBDB"    
                     /> 
                 <H style={{color:'rgba(0, 0, 0, 1)',fontSize:'1.4rem'}}>
                                             £83,003 raised                    
                 </H>
-                {/* <Hs style={{color:'rgba(133, 129, 129, 1)'}}>
-                    {`${props.site ? props.site : "Donor.org.uk"}`}
-                </Hs> */}
                 <T style={{color:'rgba(133, 129, 129'}}>
                 {`${props.time ? props.time : "End Date : XX/XX/XXXX"}`}
                 </T>
